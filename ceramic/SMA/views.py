@@ -1,5 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def index(reqest):
-    return HttpResponse("<h1>Start</h1>")
+from .models import *
+
+
+def index(request):
+    careers = Careers.objects.all()
+    return render(request, 'SMA/index.html', {'careers': careers, 'title': 'Главная страница'})

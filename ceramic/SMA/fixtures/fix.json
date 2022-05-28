@@ -1,0 +1,14 @@
+[
+  {
+    "model": "SMA.Careers",
+    "pk": 4,
+    "fields": {
+      "title": "Юго-Западный",
+      "location": "г.Чернигов",
+      "reserves": 5000,
+      "mined": 386,
+      "residue": 92.28
+
+    }
+  }
+]

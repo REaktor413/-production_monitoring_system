@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+
+
+{% for item in careers %}
+<div>
+    <p>{{ item.title }}</p>
+    <p>{{ item.location }}</p>
+    <p>{{ item.residue }} %</p>
+
+</div>
+<hr>
+
+
+{% endfor %}
+
+
+
+
+</body>
+</html>
