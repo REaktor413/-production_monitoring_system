@@ -13,7 +13,7 @@ class Samples(models.Model):
     sample = models.TextField(max_length=20)
     career = models.TextField(max_length=100)
     stack = models.TextField(max_length=20)
-    production_date = models.DateField()
+    production_date = models.DateField(blank=True)
     production_tonnage = models.IntegerField()
     used_tonnage = models.IntegerField(blank=True)
     rest_tonnage = models.IntegerField(blank=True)
